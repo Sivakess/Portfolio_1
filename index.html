@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    
+    <style>
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            z-index: -1;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!------------------------------------Navbar section--------------------------------------------->
+  <div id="background"></div>
+
+        <header class="header">
+            <a href="#home" class="logo" data-aos="fade-right" data-aos-delay="100">
+                Siva <span>Kumar</span>
+            </a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar" data-aos="fade-left" data-aos-delay="100">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- ----------------------------------------------Home section------------------------------------------------ -->
+        <div id="background" style="width: 100%; height: 100vh;"></div>
+
+        <section class="home" id="home">
+            <div class="home-rectangle"></div>
+
+            <div class="home-content" data-aos="fade-up" data-aos-delay="500">
+                <h4>Hi</h4>
+                <h1>I'm <span>Siva</span>
+                </h1>
+                <h4 class="text-animation">
+                    I'm a <span></span>
+                </h4>
+                <p class="text-align-center">
+                    I am a recent graduate with a strong passion for web development, eager to kickstart my career in
+                    the
+                    field. My academic projects have fueled my interest in creating intuitive and engaging digital
+                    experiences. I am driven by a desire to learn, grow, and contribute to meaningful projects within a
+                    collaborative team environment.
+                </p>
+
+                <div class="social-icons" data-aos="fade-up" data-aos-delay="500">
+                    <a href="https://www.linkedin.com/in/siva-kumar-63185a326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/Sivakess" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://wa.me/919361099533" target="_blank">
+                        <i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i>
+                    </a>
+                    <a href="mailto:sivakumarsivak807@gmail.com" target="_blank"><i
+                            class="fa-regular fa-envelope"></i></a>
+
+                </div>
+
+                <a href="./assets/MyResume.pdf" download="Siva_Resume.pdf" class="btn" target="_blank"
+                    data-aos="fade-right" data-aos-delay="500">
+                    Download CV
+                </a>
+
+            </div>
+            <div class="home-img" data-aos="fade-left" data-aos-delay="500">
+                <img src="./img/3 Siva pic.jpg" alt="">
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------about section------------------------------------------------ -->
+        <div id="background"></div>
+        <section class="about" id="about" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-rectangle"></div>
+
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <h4 class="text-animation"><span></span></h4>
+
+                    <div class="about-row">
+                        <div class="about-card" data-aos="fade-right">
+                            <p class="text-align-center">
+                                I am a passionate and highly motivated front-end developer with a strong foundation in
+                                <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Bootstrap</strong>,
+                                <strong>JavaScript</strong> and <strong>React.JS</strong>. I specialize in building responsive, user-friendly web applications, focusing on delivering seamless user experiences. Through various projects, I have honed my skills in integrating APIs, designing modern UIs, and optimizing web performance. Eager to apply my knowledge in a collaborative environment, I am always open to learning new technologies and contributing to innovative web solutions.
+                            </p>
+                        </div>
+
+                        <div class="about-card" data-aos="fade-left">
+                            <p class="text-align-center"><i class="fa-regular fa-envelope"></i>
+                                sivakumarsivak807@gmail.com
+                            </p>
+                            <p class="text-align-center"><i class="fa fa-phone"></i> +91 9361-099-533</p>
+                            <p class="text-align-center"><i class="fas fa-map-marker-alt"></i>
+                                Chennai, Tambaram</p>
+
+                            <div class="social-icons" data-aos="fade-right" data-aos-delay="200">
+                                <a href="https://www.linkedin.com/in/siva-kumar-63185a326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                    target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                                <a href="https://github.com/Sivakess" target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="https://wa.me/919361099533" target="_blank"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                                <a href="mailto:sivakumarsivak807@gmail.com" target="_blank"><i
+                                        class="fa-regular fa-envelope"></i></a>
+                            </div>
+
+                            <a href="mailto:sivakumarsivak807@gmail.com" class="btn"><i class="fa fa-paper-plane"></i>
+                                Get
+                                in Touch</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------project section------------------------------------------------ -->
+        <div id="background"></div>
+
+        <section class="projects" id="projects">
+
+            <h2 class="heading">Projects</h2>
+
+            <div class="projects-container" data-aos="fade-right" data-aos-delay="500">
+                <div class="projects-box">
+                    <img src="./img/email.webp" alt="">
+                    <div class="projects-info">
+                        <h4>Local Database System</h4>
+                        <p>Open Link</p>
+                        </p>
+                        <a href="https://databaselocaldirectoryproject.netlify.app/" target="_blank">
+                            <i class="bx bx-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-box" data-aos="fade-up" data-aos-delay="500">
+                    <img src="./img/ecommerce.avif" alt="">
+                    <div class="projects-info">
+                        <h4>Online Shopping</h4>
+                        <p>Open Link</p>
+                        <a href="https://shopify-weblink.netlify.app/" target="_blank">
+                            <i class="bx bx-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-box" data-aos="fade-up" data-aos-delay="500">
+                    <img src="./img/wheather.jpg" alt="">
+                    <div class="projects-info">
+                        <h4>Whether App</h4>
+                        <p>Open Link</p>
+                        <a href="https://extraordinary-brioche-fa0821.netlify.app/" target="_blank">
+                            <i class="bx bx-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-box" data-aos="fade-up" data-aos-delay="500">
+                    <img src="./img/gallary.jpg" alt="">
+                    <div class="projects-info">
+                        <h4>Gallary App</h4>
+                        <p>Open Link</p>
+                        <a href="https://myimagesearchengine.netlify.app/" target="_blank">
+                            <i class="bx bx-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="projects-box" data-aos="fade-left" data-aos-delay="500">
+                    <img src="./img/Api fake.jpg" alt="">
+                    <div class="projects-info">
+                        <h4>Commercial Website</h4>
+
+                        <p>Open Link</p>
+                        <a href="https://commercial-weblink.netlify.app/" target="_blank"> 
+                            <i class="bx bx-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-box" data-aos="fade-up" data-aos-delay="500">
+                    <img src="" alt="">
+                    <div class="projects-info">
+                        <h4>Coming sooon....</h4>
+                        <p>Open Link</p>
+                        <a href="javascript:void(0)" >
+                            <i class="bx bx-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- ------------------------------SKILL SECTION --------------------------------------->
+
+        <!-- ------------------------------SKILL SECTION --------------------------------------->
+
+        <!-- SKILL SECTION -->
+        <div id="background"></div>
+
+        <section id="skills" class="circular_progress">
+            <div class="responsive-container-block big-container">
+                <h2 class="heading">My <span>Skills</span></h2>
+                <p class="text-align1"> I’m always eager to learn and adopt the latest trends to deliver high-quality
+                    solutions.</p>
+
+                <div class="skills-wrapper">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-0 col-sm-4 card" data-aos="fade-right">
+
+                            <!-- Skill 1: HTML -->
+                            <div class="skill-card">
+                                <svg class="circle-chart" viewBox="0 0 36 36">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="70, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="circle-chart__percent">85%</text>
+                                </svg>
+                                <h4>HTML5</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 card" data-aos="fade-up">
+                            <!-- Skill 2: CSS -->
+                            <div class="skill-card">
+                                <svg class="circle-chart" viewBox="0 0 36 36">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="85, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="circle-chart__percent">85%</text>
+                                </svg>
+                                <h4>CSS3</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-4 card" data-aos="fade-left">
+                            <!-- Skill 3: React.js -->
+                            <div class="skill-card">
+                                <svg class="circle-chart" viewBox="0 0 36 36">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="80, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="circle-chart__percent">75%</text>
+                                </svg>
+                                <h4>React.js</h4>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-4 col-sm-4 card" data-aos="fade-right">
+                            <!-- Skill 4: JavaScript -->
+                            <div class="skill-card">
+                                <svg class="circle-chart" viewBox="0 0 36 36">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="90, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="circle-chart__percent">70%</text>
+                                </svg>
+                                <h4>JavaScript</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 card" data-aos="fade-up">
+                            <!-- Skill 5: Bootstrap -->
+                            <div class="skill-card">
+                                <svg class="circle-chart" viewBox="0 0 36 36">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="80, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="circle-chart__percent">75%</text>
+                                </svg>
+                                <h4>Bootstrap</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 card" data-aos="fade-left">
+                            <!-- Skill 6: Git & GitHub -->
+                            <div class="skill-card">
+                                <svg class="circle-chart" viewBox="0 0 36 36">
+                                    <path class="circle-bg"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="circle" stroke-dasharray="75, 100"
+                                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <text x="18" y="20.35" class="circle-chart__percent">70%</text>
+                                </svg>
+                                <h4>Git & GitHub</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ----------------------------------------------contact section------------------------------------------------ -->
+
+        <div id="background"></div>
+
+        <section class="contact" id="contact" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <div class="input-box">
+                    <input type="hidden" name="access_key" value="8604d301-2683-4441-a6e7-24cc74514645">
+                    <input type="text" name="full name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="mobile" placeholder="Mobile" required>
+                </div>
+
+                <textarea name="textarea" id="" cols="30" rows="5" placeholder="Your Message" required>
+
+            </textarea>
+                <input type="submit" name="submit" value="Send Message" class="btn">
+
+            </form>
+        </section>
+
+        <footer class="footer" data-aos="fade-up" data-aos-delay="100">
+            <div class="footer-container">
+                <!-- Social Media Section -->
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/siva-kumar-63185a326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/Sivakess" target="_blank" rel="noopener noreferrer"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://wa.me/919361099533" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp" id="whatsapp-icon"></i>
+                    </a>
+                    <a href="mailto:sivakumarsivak807@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-regular fa-envelope"></i></a>
+                </div>
+        
+                <!-- Navigation Links -->
+                <ul class="list">
+                    <li><a href="zfaq.html" target="_blank" rel="noopener noreferrer">FAQ</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                </ul>
+        
+                <!-- Newsletter Subscription -->
+                <div class="subscribe">
+                    <h4>"Stay in the Loop"</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+        
+                <!-- Copyright -->
+                <p class="copyright">
+                    &copy; <span id="year"></span> 🚀 Siva Kumar | All Rights Reserved 💜💻
+                </p>                               
+            </div>
+        </footer>
+        
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+        
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="main.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+                once: false,
+            });
+        </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script>
+    let vantaEffect = VANTA.NET({
+      el: "#background",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xff00ff,
+      backgroundColor: 0x000000
+    });
+    
+    // Optional: autoplay control (by default it's already playing)
+    vantaEffect.play(); // Starts or resumes animation
+    // vantaEffect.pause(); // Use if you want to stop animation at any point
+    </script>
+    
+</script>
+    
+</body>
+
+</html>

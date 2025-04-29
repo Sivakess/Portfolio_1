@@ -1,0 +1,189 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* Modern font */
+}
+
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    /* Soft gradient background */
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    transition: background-color 0.5s ease-in-out;
+    /* Smooth background transition */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #1abc9c;
+    font-size: 3rem;
+    /* Bigger and bolder */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adds a light shadow for depth */
+    position: relative;
+    display: inline-block;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #1abc9c;
+    bottom: -10px;
+    left: 25%;
+    border-radius: 4px;
+}
+
+h2 {
+    color: #3498db;
+    font-size: 2.2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Section Styles */
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added smooth animations */
+    position: relative;
+    overflow: hidden;
+}
+
+section:hover {
+    transform: translateY(0px);
+    /* More noticeable hover effect */
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+    /* Increased shadow on hover */
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, rgba(52, 152, 219, 0.3), rgba(26, 188, 156, 0.3));
+    animation: rotateGradient 8s infinite linear;
+    z-index: -1;
+    /* Keeps it behind the content */
+}
+
+@keyframes rotateGradient {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #888;
+    font-size: 1rem;
+}
+
+footer p {
+    margin-top: 30px;
+    color: #777;
+}
+
+/* Buttons */
+a.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1abc9c;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #16a085;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
